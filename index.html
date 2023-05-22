@@ -38,7 +38,7 @@
 			</div>
 			<nav>
 				<ul>
-					<li><a href="#menue">Menue</a></li>
+					<li><a href="#menue">Essen</a></li>
 					<li><a href="#drinks">Trinken</a></li>
 					<li><a href="#about">About</a></li>
 					<li><a href="#events">Events</a></li>
@@ -223,31 +223,40 @@
 				<h2 class="major">Gallery</h2>
 				<div class="gallery">
 					<a href="images/gallery/image1.jpeg">
-						<img src="images/gallery/image1.jpeg" alt="Image 1">
+						<img class="gallery-item" src="images/gallery/image1.jpeg" alt="Image 1">
 					</a>
 					<a href="images/gallery/image2.jpeg">
-						<img src="images/gallery/image2.jpeg" alt="Image 2">
+						<img class="gallery-item" src="images/gallery/image2.jpeg" alt="Image 2">
 					</a>
 					<a href="images/gallery/image3.jpeg">
-						<img src="images/gallery/image3.jpeg" alt="Image 3">
+						<img class="gallery-item" src="images/gallery/image3.jpeg" alt="Image 3">
 					</a>
 					<a href="images/gallery/image4.jpeg">
-						<img src="images/gallery/image4.jpeg" alt="Image 4">
+						<img class="gallery-item" src="images/gallery/image4.jpeg" alt="Image 4">
 					</a>
 					<a href="images/gallery/image5.jpeg">
-						<img src="images/gallery/image5.jpeg" alt="Image 5">
+						<img class="gallery-item" src="images/gallery/image5.jpeg" alt="Image 5">
 					</a>
 					<a href="images/gallery/image6.jpg">
-						<img src="images/gallery/image6.jpeg" alt="Image 6">
+						<img class="gallery-item" src="images/gallery/image6.jpeg" alt="Image 6">
 					</a>
 					<a href="images/gallery/image7.jpeg">
-						<img src="images/gallery/image7.jpeg" alt="Image 7">
+						<img class="gallery-item" src="images/gallery/image7.jpeg" alt="Image 7">
 					</a>
 					<a href="images/gallery/image8.jpeg">
-						<img src="images/gallery/image8.jpeg" alt="Image 8">
+						<img class="gallery-item" src="images/gallery/image8.jpeg" alt="Image 8">
 					</a>
 				</div>
+				<!-- Vergrößertes Bild -->
+				<div id="lightbox" class="lightbox">
+					<div class="lightbox-content">
+						<img id="lightbox-image" src="" alt="">
+						<button id="close-button" class="close-button">Schließen</button>
+					</div>
+				</div>
 			</article>
+
+
 
 
 			<!-- Contact -->
@@ -549,6 +558,7 @@ print 'It took ' + i + ' iterations to sort the deck.';</code></pre>
 	<script src="assets/js/breakpoints.min.js"></script>
 	<script src="assets/js/util.js"></script>
 	<script src="assets/js/main.js"></script>
+	<script src="assets/js/lightbox.js"></script>
 	<script>
 		var typed = new Typed('.auto-type', {
 			strings: ['ein Café', 'eine Bar', 'KLOPSTOCK'],

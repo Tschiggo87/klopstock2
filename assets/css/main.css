@@ -1177,7 +1177,7 @@ input, select, textarea {
 		}
 
 		body.is-preload #bg:before {
-			background-color: #000000;
+			background-color: #BF645B;
 		}
 
 /* Wrapper */
@@ -1546,8 +1546,9 @@ input, select, textarea {
 			position: relative;
 			width: 40rem;
 			max-width: 100%;
-			background-color: rgba(27, 31, 34, 0.85);
-			border-radius: 4px;
+			background-color: rgba(183, 183, 183, 0.5);
+			border-radius: 10px;
+			backdrop-filter: blur(10px);
 			opacity: 0;
 		}
 
@@ -1670,12 +1671,58 @@ input, select, textarea {
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: center;
+	max-width: 100%;
 }
 
-.inner{
-	background-image: url("../../images/bg-tile.jp");
+.gallery-item {
+	margin: 0.5rem;
+	max-width: 100%;
 }
 
+/* CSS-Styling für das vergrößerte Bild und den Schließen-Button */
+.lightbox {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(242, 21, 21, 0.8);
+	display: none;
+	justify-content: center;
+	align-items: center;
+	z-index: 9999;
+}
+
+.lightbox-content {
+	position: relative;
+	max-width: 90%;
+	max-height: 90%;
+}
+
+.lightbox-content img {
+	max-width: 100%;
+	max-height: 100%;
+}
+
+.close-button {
+	position: absolute;
+	top: 10px;
+	right: 10px;
+	background: none;
+	border: none;
+	color: #fff;
+	font-size: 18px;
+	cursor: pointer;
+}
+
+/* Weitere CSS-Stile hier einfügen */
+
+
+
+
+
+
+/* Logo */
 .logo-k{
 	font-size: 3em;
 	font-weight: bold;
