@@ -1307,7 +1307,7 @@ input, select, textarea {
 			border-top-width: 1px;
 			border-bottom-width: 1px;
 			max-width: 100%;
-			fbackground-color: rgba(57, 57, 57, 0.5);
+			background-color: rgba(183, 183, 183, 0.5);
 			border-radius: 10px;
 			backdrop-filter: blur(15px);
 		}
