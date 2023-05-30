@@ -1295,7 +1295,8 @@ input, select, textarea {
 			line-height: 5.5rem;
 			border: solid 1px #ffffff;
 			background-color: rgba(57, 57, 57, 0.5);
-				backdrop-filter: blur(19px);>yxcvbnm,
+			-webkit-backdrop-filter: blur(19px);
+			backdrop-filter: blur(19px);
 		}
 
 			#header .logo .icon:before {
@@ -1346,6 +1347,9 @@ input, select, textarea {
 			list-style: none;
 			padding-left: 0;
 			border: solid 1px #ffffff;
+			background-color: rgba(57, 57, 57, 0.5);
+				-webkit-backdrop-filter: blur(19px);
+				backdrop-filter: blur(19px);
 			/* border-radius: 4px; */
 		}
 
