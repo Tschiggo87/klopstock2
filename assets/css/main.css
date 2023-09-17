@@ -1722,7 +1722,6 @@ body.is-preload #footer {
 
 /* Weitere CSS-Stile hier einfügen */
 
-
 /* Logo */
 .logo-k {
 	font-size: 3em;
@@ -1750,7 +1749,7 @@ body.is-preload #footer {
 	z-index: 1;
 }
 
-/* Wrapper for the pop-up to create a blurred background */
+/* Pop Up */
 .pop-up-wrapper {
 	position: fixed;
 	top: 0;
@@ -1767,6 +1766,13 @@ body.is-preload #footer {
 	text-align: center;
 }
 
+.pop-up-logo {}
+
+.pop-up-logo-header {
+	font-size: 1.2em;
+}
+
+
 .border-container {
 	padding: 20px;
 	/* Größe des Randes */
@@ -1775,12 +1781,14 @@ body.is-preload #footer {
 	display: inline-block;
 }
 
-
-/* Actual pop-up window styling */
 .pop-up {
 	position: relative;
 	width: 60%;
 	text-align: center;
+}
+
+.pop-up-button {
+	margin-top: 1em;
 }
 
 .blur-background {
@@ -1793,19 +1801,12 @@ body.is-preload #footer {
 	z-index: -1;
 }
 
-
-/* Close button styling */
-.close-button {
-	font-size: 24px;
-	cursor: pointer;
-	z-index: 1;
-}
-
 .pop-up-header {
-	font-size: 4rem;
+	font-size: 3rem;
 	text-decoration: center;
 	letter-spacing: normal;
 }
+
 
 /* About */
 
