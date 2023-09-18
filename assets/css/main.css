@@ -1785,6 +1785,7 @@ body.is-preload #footer {
 	position: relative;
 	width: 60%;
 	text-align: center;
+
 }
 
 .pop-up-button {
@@ -1803,6 +1804,7 @@ body.is-preload #footer {
 
 .pop-up-header {
 	font-size: 3rem;
+	font-weight: 200;
 	text-decoration: center;
 	letter-spacing: normal;
 }
@@ -1811,6 +1813,10 @@ body.is-preload #footer {
 /* About */
 
 .image-column {
-	display: flex;
-	align-items: space-between;
+	display: flx;
 }
+
+.about-image {
+	width: 30%;
+}
+
