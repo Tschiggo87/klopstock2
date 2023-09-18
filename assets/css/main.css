@@ -1790,6 +1790,7 @@ body.is-preload #footer {
 
 .pop-up-button {
 	margin-top: 1em;
+	min-width: 150px;
 }
 
 .blur-background {
@@ -1819,4 +1820,3 @@ body.is-preload #footer {
 .about-image {
 	width: 30%;
 }
-
