@@ -1766,7 +1766,6 @@ body.is-preload #footer {
 	text-align: center;
 }
 
-.pop-up-logo {}
 
 .pop-up-logo-header {
 	font-size: 1.2em;
@@ -1813,10 +1812,41 @@ body.is-preload #footer {
 
 /* About */
 
-.image-column {
-	display: flx;
+.block-text {
+	text-align: justify;
 }
 
-.about-image {
-	width: 30%;
+
+@media (min-width: 768px) {
+	.about-column {
+		display: flex;
+		align-items: center;
+		/* Vertikal zentrieren */
+	}
+
+	.column-reverse {
+		flex-direction: row-reverse;
+	}
+
+	.about-image {
+		max-height: 100%;
+		flex-basis: 2/5;
+		width: auto;
+
+	}
+
+	.about-text {
+		flex: 3/5;
+		margin-right: 3em;
+		text-align: justify;
+	}
+
+	.text-reverse {
+		margin-left: 3em;
+	}
+}
+
+/* Events */
+.block-text {
+	text-align: justify;
 }
