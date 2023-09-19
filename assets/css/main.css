@@ -1749,6 +1749,7 @@ body.is-preload #footer {
 	z-index: 1;
 }
 
+
 /* Pop Up */
 .pop-up-wrapper {
 	position: fixed;
@@ -1821,7 +1822,6 @@ body.is-preload #footer {
 	.about-column {
 		display: flex;
 		align-items: center;
-		/* Vertikal zentrieren */
 	}
 
 	.column-reverse {
@@ -1830,7 +1830,7 @@ body.is-preload #footer {
 
 	.about-image {
 		max-height: 100%;
-		flex-basis: 2/5;
+		flex-basis: 2/3;
 		width: auto;
 
 	}
