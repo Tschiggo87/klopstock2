@@ -651,7 +651,7 @@ input[type="radio"]+label:before {
 
 .image:before {
 	pointer-events: none;
-	background-image: url("../../images/overlay.png");
+	/* background-image: url("../../images/overlay.png"); */
 	background-color: rgba(19, 21, 25, 0.5);
 	border-radius: 4px;
 	content: '';
@@ -923,10 +923,16 @@ ul.icons li a {
 	line-height: 2.25rem;
 	text-align: center;
 	width: 2.25rem;
+	background-color: rgba(57, 57, 57, 0.5);
+	-webkit-backdrop-filter: blur(19px);
+	backdrop-filter: blur(19px);
 }
 
 ul.icons li a:hover {
-	background-color: rgba(255, 255, 255, 0.075);
+	/* background-color: rgba(255, 255, 255, 0.075); */
+	background-color: rgba(57, 57, 57, 0.25);
+	-webkit-backdrop-filter: blur(19px);
+	backdrop-filter: blur(19px);
 }
 
 ul.icons li a:active {
@@ -1144,7 +1150,7 @@ button {
 	-webkit-transition-delay: 0.75s;
 	-ms-transition-delay: 0.75s;
 	transition-delay: 0.75s;
-	background-image: linear-gradient(to top, rgba(19, 21, 25, 0.4), rgba(19, 21, 25, 0.2)), url("../../images/overlay.png");
+	/* background-image: linear-gradient(to top, rgba(19, 21, 25, 0.4), rgba(19, 21, 25, 0.2)), url("../../images/overlay.png"); */
 	background-size: auto, 256px 256px;
 	background-position: center,
 		center;
@@ -1318,6 +1324,7 @@ body.is-preload #bg:before {
 	background-color: rgba(57, 57, 57, 0.5);
 	-webkit-backdrop-filter: blur(19px);
 	backdrop-filter: blur(19px);
+	padding: 0 1em;
 }
 
 #header .content .inner {
@@ -1340,8 +1347,8 @@ body.is-preload #bg:before {
 }
 
 #header .content p {
-	letter-spacing: 0.2rem;
-	font-size: 0.8rem;
+	letter-spacing: 0.1rem;
+	font-size: 1.1rem;
 	line-height: 2;
 }
 
@@ -1374,12 +1381,12 @@ body.is-preload #bg:before {
 	min-width: 7.5rem;
 	height: 2.75rem;
 	line-height: 2.75rem;
-	padding: 0 1.25rem 0 1.45rem;
+	padding: 0 1.2rem 0 1.2rem;
 	text-transform: uppercase;
-	letter-spacing: 0.2rem;
+	letter-spacing: 0.1rem;
 	font-size: 0.8rem;
 	border-bottom: 0;
-	background-color: rgba(57, 57, 57, 0.5);
+	/* background-color: rgba(57, 57, 57, 0.5); */
 	/* backdrop-filter: blur(19px); */
 }
 
@@ -1879,4 +1886,9 @@ body.is-preload #footer {
 .lightbox-content img {
 	max-width: 100%;
 	max-height: 100%;
+}
+
+.bold {
+	font-weight: bold;
+	text-transform: inherit;
 }
