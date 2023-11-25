@@ -1660,15 +1660,13 @@ body.is-preload #header .content .inner {
 	width: 100%;
 	max-width: 100%;
 	margin-top: 2rem;
-	text-align: center;
+	text-align: end;
 }
 
 #footer .copyright {
-	letter-spacing: 0.2rem;
-	font-size: 0.6rem;
-	opacity: 0.75;
+	font-size: 0.5rem;
+	opacity: 0.5;
 	margin-bottom: 0;
-	text-transform: uppercase;
 }
 
 body.is-article-visible #footer {
@@ -1856,6 +1854,7 @@ body.is-preload #footer {
 	}
 
 }
+
 
 /* Events */
 .block-text {
