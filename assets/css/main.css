@@ -966,7 +966,8 @@ table tbody tr:nth-child(2n + 1) {
 }
 
 table td {
-	padding: 0.75em 0.75em;
+	padding: 0.5em 0.5em;
+	width: 100%;
 }
 
 table th {
@@ -1385,9 +1386,9 @@ body.is-preload #bg:before {
 	min-width: 7.5rem;
 	height: 2.75rem;
 	line-height: 2.75rem;
-	padding: 0 1.2rem 0 1.2rem;
+	/* padding: 0 1.2rem 0 1.2rem; */
 	text-transform: uppercase;
-	letter-spacing: 0.1rem;
+	/* letter-spacing: 0.1rem; */
 	font-size: 0.8rem;
 	border-bottom: 0;
 	/* background-color: rgba(57, 57, 57, 0.5); */
@@ -1570,7 +1571,7 @@ body.is-preload #header .content .inner {
 	transition: opacity 0.325s ease-in-out, transform 0.325s ease-in-out;
 	padding: 4.5rem 2.5rem 1.5rem 2.5rem;
 	position: relative;
-	width: 60rem;
+	width: 50rem;
 	max-width: 100%;
 	background-color: rgba(57, 57, 57, 0.5);
 	border-radius: 10px;
@@ -1645,7 +1646,7 @@ body.is-preload #header .content .inner {
 @media screen and (max-width: 480px) {
 
 	#main article {
-		padding: 3rem 1.5rem 0.5rem 1.5rem;
+		padding: 3rem 1.5rem 3rem 1.5rem;
 	}
 
 }
@@ -1691,18 +1692,59 @@ body.is-preload #footer {
 
 }
 
-/* Gallery */
+/* google Maps */
 
-.gallery {
-	flex-wrap: wrap;
-	justify-content: center;
-	max-width: 100%;
-}
-
-.gallery-item {
+.maps-item {
 	margin-bottom: 1rem;
 	width: 100%;
 	border-radius: 10px;
+}
+
+/* Gallery */
+
+.gallery {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	grid-auto-rows: 300px;
+	gap: 10px;
+	margin: 20px 0;
+}
+
+.gallery-item {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	object-position: center;
+	border-radius: 8px;
+}
+
+@media (max-width: 768px) {
+	.gallery {
+		grid-template-columns: repeat(2, 1fr);
+	}
+}
+
+@media (max-width: 480px) {
+	.gallery {
+		grid-template-columns: 1fr;
+		grid-auto-rows: auto;
+	}
+
+	.gallery-item {
+		height: auto;
+	}
+
+	.center {
+		text-align: center;
+		margin-top: 20px;
+	}
+}
+
+.center {
+	display: flex;
+	text-align: center;
+	justify-content: center;
+	align-items: center;
 }
 
 /* CSS-Styling für das vergrößerte Bild und den Schließen-Button */
@@ -1814,6 +1856,7 @@ body.is-preload #footer {
 }
 
 .pop-up-header {
+	margin-top: 2rem;
 	font-size: 3rem;
 	font-weight: 200;
 	text-decoration: center;
@@ -1894,4 +1937,3 @@ body.is-preload #footer {
 	font-weight: bold;
 	text-transform: inherit;
 }
-
